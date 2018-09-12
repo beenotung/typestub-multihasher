@@ -1,5 +1,3 @@
-import {Stream} from "stream";
+declare function multihasher(algo: string | number): (value: Buffer | { pipe: Function }) => Promise<string>;
 
-declare function multihasher(algo: string|number): (value: Buffer | Stream) => Promise<string>;
-
-export = multihasher
+export = multihasher;

@@ -3,8 +3,6 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write index.d.ts",
-    "postformat": "tslint -p . --fix",
     "test": "tsc index.d.ts"
   },
   "keywords": [
@@ -19,9 +17,6 @@
   },
   "devDependencies": {
     "@types/node": "^8.0.0",
-    "prettier": "^1.13.7",
-    "tslint": "^5.10.0",
-    "tslint-eslint-rules": "^5.2.0",
     "typescript": "^2.8.3"
   },
   "peerDependencies": {
