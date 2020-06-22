@@ -1,6 +1,9 @@
 examples
 node_modules
+pnpm-lock.yaml
+yarn.lock
 tsconfig.json
 tslint.json
-yarn.lock
+.editorconfig
 .idea/
+*.tgz

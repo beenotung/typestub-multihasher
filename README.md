@@ -1,24 +1,18 @@
-# TypeStub for (js-)multibase
-[![npm Package Version](https://img.shields.io/npm/v/typestub-multibase.svg?maxAge=2592000)](https://www.npmjs.com/package/typestub-multibase)
+# typestub-multihasher
 
-source: https://github.com/multiformats/js-multibase
+TypeStub for multihasher
+
+[![npm Package Version](https://img.shields.io/npm/v/typestub-multihasher.svg?maxAge=2592000)](https://www.npmjs.com/package/typestub-multihasher)
+
+source: https://github.com/mikeal/multihasher
 
 ## TL;DL
 add types to npm package multibase and allow client to import only once directly
 
 ## Example
 ```typescript
-import * as multibase from "typestub-multibase";
-import {decode, isEncoded} from "typestub-multibase";
+import multihasher = require('typestub-multihasher');
 
-let data = 'the long data';
-let code = multibase.encode('base64', data).toString();
-let type = isEncoded(code);
-let recover = decode(code).toString();
-console.log({
-  data,
-  code,
-  type,
-  recover,
-});
+multihasher('sha256')(Buffer.from('test')).then(console.log);
+// print: QmZ5NmGeStdit7tV6gdak1F8FyZhPsfA843YS9f2ywKH6w
 ```
